@@ -1,0 +1,90 @@
+[2026-05-09 21:23:45] [START ] Surveillance démarrée sur : ./testdir
+[2026-05-09 21:23:45] [START ] SecureBox démarré avec succès.
+[2026-05-09 21:23:58] [STATS ] ========================================
+[2026-05-09 21:23:58] [STATS ] Durée de fonctionnement : 0h 0m 13s
+[2026-05-09 21:23:58] [STATS ] Total événements        : 0
+[2026-05-09 21:23:58] [STATS ] Créations               : 0
+[2026-05-09 21:23:58] [STATS ] Suppressions            : 0
+[2026-05-09 21:23:58] [STATS ] Modifications           : 0
+[2026-05-09 21:23:58] [STATS ] Renommages              : 0
+[2026-05-09 21:23:58] [STATS ] Alertes générées        : 0
+[2026-05-09 21:23:58] [STATS ] ========================================
+[2026-05-09 21:23:58] [STOP  ] SecureBox arrêté proprement.
+[2026-05-09 21:25:19] [START ] Surveillance démarrée sur : ./testdir
+[2026-05-09 21:25:19] [START ] SecureBox démarré avec succès.
+[2026-05-09 21:25:47] [INFO  ] CREATE_FILE : ./testdir/rapport.txt
+[2026-05-09 21:26:18] [INFO  ] MODIFY_FILE : ./testdir/rapport.txt
+[2026-05-09 21:26:53] [INFO  ] DELETE_FILE : ./testdir/rapport.txt
+[2026-05-09 21:27:30] [INFO  ] CREATE_FILE : ./testdir/ancien.txt
+[2026-05-09 21:27:35] [INFO  ] RENAME_FILE : ./testdir/ancien.txt -> ./testdir/nouveau.txt
+[2026-05-09 21:29:40] [INFO  ] CREATE_DIR  : ./testdir/sousrep
+[2026-05-09 21:29:49] [INFO  ] DELETE_DIR  : ./testdir/sousrep
+[2026-05-09 21:30:27] [INFO  ] CREATE_FILE : ./testdir/.secret
+[2026-05-09 21:30:27] [ALERTE] HIDDEN_FILE : ./testdir/.secret
+[2026-05-09 21:30:57] [INFO  ] CREATE_FILE : ./testdir/virus.exe
+[2026-05-09 21:30:57] [ALERTE] FORBIDDEN_EXT : ./testdir/virus.exe
+[2026-05-09 21:31:07] [INFO  ] CREATE_FILE : ./testdir/malware.sh
+[2026-05-09 21:31:07] [ALERTE] FORBIDDEN_EXT : ./testdir/malware.sh
+[2026-05-09 21:31:55] [INFO  ] CREATE_FILE : ./testdir/script.sh
+[2026-05-09 21:31:55] [ALERTE] FORBIDDEN_EXT : ./testdir/script.sh
+[2026-05-09 21:32:04] [ALERTE] EXEC_CHMOD : ./testdir/script.sh
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f1
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f2
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f3
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f4
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f5
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f6
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f7
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f8
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f9
+[2026-05-09 21:32:48] [INFO  ] CREATE_FILE : ./testdir/f10
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f1
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f10
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f2
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f3
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f4
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f5
+[2026-05-09 21:33:00] [ALERTE] Rafale de suppressions detectee (>5 en 10s)
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f6
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f7
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f8
+[2026-05-09 21:33:00] [INFO  ] DELETE_FILE : ./testdir/f9
+[2026-05-09 21:33:38] [INFO  ] CREATE_FILE : ./testdir/file1
+[2026-05-09 21:34:16] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 21:34:17] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 21:34:17] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 21:34:17] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 21:34:17] [ALERTE] Modifications rapides sur : ./testdir/file1 (>3 en 5s)
+[2026-05-09 21:34:17] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 21:34:42] [STATS ] ========================================
+[2026-05-09 21:34:42] [STATS ] Durée de fonctionnement : 0h 9m 23s
+[2026-05-09 21:34:42] [STATS ] Total événements        : 38
+[2026-05-09 21:34:42] [STATS ] Créations               : 18
+[2026-05-09 21:34:42] [STATS ] Suppressions            : 12
+[2026-05-09 21:34:42] [STATS ] Modifications           : 7
+[2026-05-09 21:34:42] [STATS ] Renommages              : 1
+[2026-05-09 21:34:42] [STATS ] Alertes générées        : 7
+[2026-05-09 21:34:42] [STATS ] ========================================
+[2026-05-09 21:35:07] [STATS ] ========================================
+[2026-05-09 21:35:07] [STATS ] Durée de fonctionnement : 0h 9m 48s
+[2026-05-09 21:35:07] [STATS ] Total événements        : 38
+[2026-05-09 21:35:07] [STATS ] Créations               : 18
+[2026-05-09 21:35:07] [STATS ] Suppressions            : 12
+[2026-05-09 21:35:07] [STATS ] Modifications           : 7
+[2026-05-09 21:35:07] [STATS ] Renommages              : 1
+[2026-05-09 21:35:07] [STATS ] Alertes générées        : 7
+[2026-05-09 21:35:07] [STATS ] ========================================
+[2026-05-09 21:35:07] [STOP  ] SecureBox arrêté proprement.
+[2026-05-09 22:26:24] [START ] Surveillance démarrée sur : ./testdir
+[2026-05-09 22:26:24] [START ] SecureBox démarré avec succès.
+[2026-05-09 22:26:39] [INFO  ] MODIFY_FILE : ./testdir/file1
+[2026-05-09 22:58:16] [STATS ] ========================================
+[2026-05-09 22:58:16] [STATS ] Durée de fonctionnement : 0h 31m 52s
+[2026-05-09 22:58:16] [STATS ] Total événements        : 1
+[2026-05-09 22:58:16] [STATS ] Créations               : 0
+[2026-05-09 22:58:16] [STATS ] Suppressions            : 0
+[2026-05-09 22:58:16] [STATS ] Modifications           : 1
+[2026-05-09 22:58:16] [STATS ] Renommages              : 0
+[2026-05-09 22:58:16] [STATS ] Alertes générées        : 0
+[2026-05-09 22:58:16] [STATS ] ========================================
+[2026-05-09 22:58:16] [STOP  ] SecureBox arrêté proprement.
